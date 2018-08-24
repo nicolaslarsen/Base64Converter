@@ -1,0 +1,17 @@
+﻿<Window x:Class="Base64Converter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Base64Converter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="900">
+    <Grid>
+        <TextBox x:Name="B64box" HorizontalAlignment="Left" Height="573" Margin="171,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="697"/>
+        <Button x:Name="SubmitButton" Content="Convert" HorizontalAlignment="Left" Margin="20,531,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" Click="SubmitButton_Click"/>
+        <Button x:Name="FileSelectorButton" Content="Select input file" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" Click="FileSelectorButton_Click"/>
+        <Button x:Name="OutputSelectorButton" Content="Select output file" HorizontalAlignment="Left" Margin="20,266,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" Click="OutputSelectorButton_Click" AutomationProperties.HelpText="If you want the output written to a specific file, you can choose it here."/>
+        <Button x:Name="OutputResetButton" Content="Reset to default" HorizontalAlignment="Left" Margin="20,347,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" AutomationProperties.HelpText="If you want to just use the default output filename" Visibility="Hidden" Click="OutputResetButton_Click"/>
+
+    </Grid>
+</Window>
