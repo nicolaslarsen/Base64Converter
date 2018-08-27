@@ -1,0 +1,15 @@
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\bin\Release\Base64Converter.exe.config
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\bin\Release\Base64Converter.exe
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\bin\Release\Base64Converter.pdb
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\MainWindow.g.cs
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\App.g.cs
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\Base64Converter_MarkupCompile.cache
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\Base64Converter_MarkupCompile.lref
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\MainWindow.baml
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\Base64Converter.g.resources
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\Base64Converter.Properties.Resources.resources
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\Base64Converter.csproj.GenerateResource.Cache
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\Base64Converter.csproj.CoreCompileInputs.cache
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\Base64Converter.exe
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\Base64Converter.pdb
+C:\Users\nr\Documents\Base64Converter\Base64Converter\Base64Converter\obj\Release\Base64Converter.csprojResolveAssemblyReference.cache

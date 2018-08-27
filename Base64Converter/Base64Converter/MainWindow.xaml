@@ -5,13 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Base64Converter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="900">
+        Title="Base64 converter" Height="650" Width="900" WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBox x:Name="B64box" HorizontalAlignment="Left" Height="573" Margin="171,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="697"/>
-        <Button x:Name="SubmitButton" Content="Convert" HorizontalAlignment="Left" Margin="20,531,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" Click="SubmitButton_Click"/>
-        <Button x:Name="FileSelectorButton" Content="Select input file" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" Click="FileSelectorButton_Click"/>
-        <Button x:Name="OutputSelectorButton" Content="Select output file" HorizontalAlignment="Left" Margin="20,266,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" Click="OutputSelectorButton_Click" AutomationProperties.HelpText="If you want the output written to a specific file, you can choose it here."/>
-        <Button x:Name="OutputResetButton" Content="Reset to default" HorizontalAlignment="Left" Margin="20,347,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" AutomationProperties.HelpText="If you want to just use the default output filename" Visibility="Hidden" Click="OutputResetButton_Click"/>
+        <Button x:Name="SubmitButton" Content="Convert" HorizontalAlignment="Left" Margin="20,531,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" Click="SubmitButton_Click" Cursor="Hand">
+            <Button.ToolTip>
+                <StackPanel>
+                    <TextBlock FontWeight="Bold">Convert</TextBlock>
+                    <TextBlock>Decodes the base64-encoded string in the text field and places the output in an output file.
+                        Also resets the output file, so you do not accidentally overwrite</TextBlock>
+                </StackPanel>
+            </Button.ToolTip> 
+        </Button>
+        <Button x:Name="FileSelectorButton" Content="Select input file" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" Click="FileSelectorButton_Click" Cursor="Hand">
+            <Button.ToolTip>
+                <StackPanel>
+                    <TextBlock FontWeight="Bold">Input file</TextBlock>
+                    <TextBlock>If you want to open a base64-encoded string from a file</TextBlock>
+                </StackPanel>
+            </Button.ToolTip> 
+        </Button>
+        <Button x:Name="OutputSelectorButton" Content="Select output file" HorizontalAlignment="Left" Margin="20,266,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" Click="OutputSelectorButton_Click" AutomationProperties.HelpText="If you want the output written to a specific file, you can choose it here." Cursor="Hand">
+            <Button.ToolTip>
+                <StackPanel>
+                    <TextBlock FontWeight="Bold">Output file</TextBlock>
+                    <TextBlock>If you don't select an output file, a pdf file called output_[timestamp] will be generated in the Base64converter folder</TextBlock>
+                </StackPanel>
+            </Button.ToolTip> 
+        </Button>
+        <Button x:Name="OutputResetButton" Content="Reset to default" HorizontalAlignment="Left" Margin="20,347,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" AutomationProperties.HelpText="If you want to just use the default output filename" Visibility="Hidden" Click="OutputResetButton_Click">
+            <Button.ToolTip>
+                <StackPanel>
+                    <TextBlock FontWeight="Bold">Reset output</TextBlock>
+                    <TextBlock>Forgets your selected output file and defaults to generating a new pdf file</TextBlock>
+                </StackPanel>
+            </Button.ToolTip> 
+        </Button>
 
     </Grid>
 </Window>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Windows;
 
@@ -15,23 +16,17 @@ namespace Base64Converter
         public MainWindow()
         {
             InitializeComponent();
-            CenterWindowOnScreen();
             outputFilename = Converter.CreateFilename();
-        }
-
-        public void CenterWindowOnScreen()
-        {
-            double screenWidth = System.Windows.SystemParameters.PrimaryScreenWidth;
-            double screenHeight = System.Windows.SystemParameters.PrimaryScreenHeight;
-            double windowWidth = this.Width;
-            double windowHeight = this.Height;
-            this.Left = (screenWidth / 2) - (windowWidth / 2);
-            this.Top = (screenHeight / 2) - (windowHeight / 2);
         }
 
         private void OutputSelectorButton_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog fileChooser = new OpenFileDialog();
+            SaveFileDialog fileChooser = new SaveFileDialog
+            {
+                DefaultExt      = "pdf",
+                AddExtension    = true
+            };
+
             if (fileChooser.ShowDialog() == true)
             {
                 outputFilename = fileChooser.FileName;
@@ -72,6 +67,8 @@ namespace Base64Converter
                 try
                 {
                     File.WriteAllText(outputFilename, Converter.Base64Decode(B64box.Text));
+                    System.Console.WriteLine(outputFilename);
+                    Process.Start(outputFilename);
                     outputFilename = Converter.CreateFilename();
                     OutputResetButton.Visibility = Visibility.Hidden;
                 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Base64Converter
 {
@@ -20,7 +16,7 @@ namespace Base64Converter
 
         public static string CreateFilename()
         {
-            string TS = "" + DateTime.Now.Ticks;
+            long TS = DateTime.Now.Ticks;
             return "output_" + TS + ".pdf";
         }
     }
