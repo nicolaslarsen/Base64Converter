@@ -67,7 +67,6 @@ namespace Base64Converter
                 try
                 {
                     File.WriteAllText(outputFilename, Converter.Base64Decode(B64box.Text));
-                    System.Console.WriteLine(outputFilename);
                     Process.Start(outputFilename);
                     outputFilename = Converter.CreateFilename();
                     OutputResetButton.Visibility = Visibility.Hidden;
