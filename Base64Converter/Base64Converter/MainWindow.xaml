@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Base64 converter" Height="650" Width="900" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <TextBox x:Name="B64box" HorizontalAlignment="Left" Height="573" Margin="171,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="697"/>
         <Button x:Name="SubmitButton" Content="Convert" HorizontalAlignment="Left" Margin="20,531,0,0" VerticalAlignment="Top" Width="133" Height="66" FontSize="14" Click="SubmitButton_Click" Cursor="Hand">
             <Button.ToolTip>
@@ -41,6 +47,5 @@
                 </StackPanel>
             </Button.ToolTip> 
         </Button>
-
     </Grid>
 </Window>
