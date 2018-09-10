@@ -66,7 +66,7 @@ namespace Base64Converter
             if (msgResult == MessageBoxResult.Yes && !string.IsNullOrWhiteSpace(B64box.Text)){
                 try
                 {
-                    File.WriteAllText(outputFilename, Converter.Base64Decode(B64box.Text));
+                    File.WriteAllBytes(outputFilename, Converter.Base64Decode(B64box.Text));
                     Process.Start(outputFilename);
                     outputFilename = Converter.CreateFilename();
                     OutputResetButton.Visibility = Visibility.Hidden;
