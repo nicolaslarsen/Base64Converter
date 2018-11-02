@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Base64Converter"
         mc:Ignorable="d"
-        Title="Base64 converter" Height="650" Width="900" WindowStartupLocation="CenterScreen">
+        Title="Base64 converter" Height="650" Width="900" WindowStartupLocation="CenterScreen"
+        Closing="Close">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
